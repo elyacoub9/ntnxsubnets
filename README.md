@@ -1,5 +1,6 @@
 # ntnxsubnets
-bash script to create multiple subnets 
+bash script to create multiple nutanix subnets 
+
 - you will need a `csv` file in this format: `VlanName;VLAN-ID`
 example:
 ```csv
@@ -33,16 +34,18 @@ done < "\$subnets"
 echo "--------------------------"
 echo "subnets created = \$counter"
 echo "--------------------------"
+EOF
 ```
+nb: make sure you are using the appropriate vswitch name 
 
 2) make it executable:
 ```bash
-chmod u+x ntnxsubnet
+chmod u+x ntnxsubnets
 ```
 
 3) run the script:
 ```bash
-./ntnxsubnet subnets.csv
+./ntnxsubnets subnets.csv
 ```
 
 
