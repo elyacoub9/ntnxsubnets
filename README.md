@@ -8,7 +8,7 @@ BDA_DMZ_PARTNERS;1140
 ```
 name it `subnets.csv`
 
-- run these commands in a CVM
+run these commands in a CVM
 1) create the script `ntnxsubnets` :
 
 ```bash
