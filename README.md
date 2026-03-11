@@ -21,7 +21,7 @@ counter=0
 
 while IFS=';' read -r vlan_name vlan_id; do
 
-        acli net.create "\$vlan_name" vlan="\$vlan_id" virtual_switch=vs1";
+        acli net.create "\$vlan_name" vlan="\$vlan_id" virtual_switch=vs1;
         if [ \$? -eq 0 ]; then
                 echo "\$vlan_name created successfully"
                 counter=\$((counter+1))
